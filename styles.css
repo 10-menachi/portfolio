@@ -47,11 +47,15 @@
   flex-grow: 0;
 }
 
-.logo {
+.logo a {
+  text-decoration: none;
+}
+
+.logo-text {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 0.7rem;
+  font-size: 1.25rem;
   line-height: 1.25rem;
   display: flex;
   align-items: center;
@@ -62,17 +66,13 @@
   flex-grow: 0;
 }
 
-.ham-menu {
-  display: none;
-}
-
 .main {
-  background-image: url("assets/bg.png");
+  background-image: url("assets/bg-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 718px;
-  margin-top: 0;
-  padding: 10% 10%;
+  width: 100vw;
+  padding: 5rem 10%;
   border-bottom-left-radius: 30%;
 }
 
@@ -80,10 +80,8 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 3rem;
-  line-height: 4.5rem;
+  font-size: 2rem;
   color: #091e42;
-  padding: 1.5rem 0;
 }
 
 .main p {
@@ -96,17 +94,18 @@
   margin-bottom: 2.5rem;
 }
 
-main .connect {
+.main .connect {
   color: #6070ff;
   font-size: 1.5rem;
 }
 
-.social-media-icons {
+.social-media-icons ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 10rem;
+  list-style-type: none;
 }
 
 .social-media-icons img {
@@ -114,6 +113,7 @@ main .connect {
   height: 1rem;
   color: #505f79;
   object-fit: contain;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -126,18 +126,5 @@ main .connect {
     font-size: 1.25rem;
     cursor: pointer;
     color: #6070ff;
-  }
-
-  .main h1 {
-    margin-top: 7rem;
-  }
-
-  .main,
-  .header {
-    max-width: 378px;
-  }
-
-  .main {
-    margin-bottom: 5rem;
   }
 }
