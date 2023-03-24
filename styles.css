@@ -38,6 +38,21 @@ body {
   line-height: 1.25rem;
 }
 
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: #6070ff;
+  opacity: 0.9;
+  gap: 2.5rem;
+}
+
 .nav-links ul {
   display: flex;
   flex-direction: row;
@@ -62,10 +77,6 @@ body {
 }
 
 .ham-menu {
-  display: none;
-}
-
-.mobile-menu {
   display: none;
 }
 
@@ -229,11 +240,22 @@ main p {
   position: absolute;
   width: 75px;
   height: 75px;
-  left: 1174px;
+  left: 1284px;
   top: 644px;
   background: #fff;
   border: 1px solid #ebebff;
   border-radius: 100%;
+}
+
+.el-12 {
+  position: absolute;
+  width: 36.9px;
+  height: 18.45px;
+  left: 290.7px;
+  top: 689.93px;
+  background: #6070ff;
+  transform: rotate(-176.08deg);
+  border-radius: 100px 100px 0 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -241,6 +263,8 @@ main p {
     padding: 0 2.5rem;
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     background-color: #fff;
   }
@@ -259,21 +283,6 @@ main p {
     cursor: pointer;
     font-size: 1.5em;
     padding: 20px;
-  }
-
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    position: fixed;
-    top: -100vh;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    background-color: #6070ff;
-    opacity: 0.9;
-    gap: 2.5rem;
   }
 
   .mobile-menu-links a {
@@ -317,7 +326,9 @@ main p {
     margin-bottom: 9rem;
   }
 
-  /* when the ham menu toggle is checked show the mobile menu */
+  .mobile-menu {
+    top: -100vh;
+  }
 
   #ham-menu-toggle:checked + .mobile-menu {
     top: 0;
