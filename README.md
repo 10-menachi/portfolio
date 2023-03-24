@@ -1,32 +1,6 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <img src="th.webp" alt="logo" width="140"  height="auto" />
   <br/>
 
@@ -71,9 +45,9 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-    <li><a href="https://reactjs.org/">CSS</a></li>
-    <li><a href="https://reactjs.org/">JavaScript</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
   </ul>
 </details>
 
@@ -91,21 +65,14 @@ No databases have been used in this project
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+A user can:
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com)
+- [x] View my projects
+- [x] View my skills
+- [x] View my contact details
+- [x] View my resume
+- [x] View my social media links
+- [x] Contact me for work through given links
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,83 +80,52 @@ No databases have been used in this project
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+To get a local copy up and running, follow these steps:
 
-To get a local copy up and running, follow these steps.
+<ul>
+  <li>Open the HTML file in a browser of your choice</li>
+</ul>
+
+The link below provides details on browser support <br />
+
+<a href="https://www.w3schools.com/tags/ref_html_browsersupport.asp">Browser Support</a>
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
+A working browser
+LightHouse
+WebHint
+StyleLint
 
-```sh
- gem install rails
-```
- -->
+The link below provides details on browser support
+
+<a href="https://www.w3schools.com/tags/ref_html_browsersupport.asp">Browser Support</a>
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/10-menachi/portfolio.git
 ```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
 
 ### Usage
 
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+To run the project, Open the HTML file in a browser of your choice
 
 ### Run tests
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+There are no tests for this project
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
+- [GitHub Pages](https://pages.github.com/)
+- [Netlify](https://www.netlify.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,19 +133,11 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Christian Wamalwa**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- [@10-menachi](https://github.com/10-menachi)
+- [@christian_timbe](https://twitter.com/christian_timbe)
+- [chris-droid](https://linkedin.com/in/chris-droid)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,11 +145,12 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Project Showcase**
+      I will add a showcase of my projects
+- [ ] **About Page**
+      A page that describes me
+- [ ] **Contact Form**
+      A form that allows users to contact me
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -239,9 +168,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project and want to support it, please give it a ⭐️!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -249,25 +176,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank Microverse for this wonderful opportunity to learn and grow as a developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -276,7 +185,5 @@ I would like to thank...
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
