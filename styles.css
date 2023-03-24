@@ -33,7 +33,7 @@
 
 .nav-links a {
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.9375rem;
@@ -48,7 +48,7 @@
 }
 
 .logo {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.7rem;
@@ -120,6 +120,7 @@ main .connect {
   .nav-links ul {
     display: none;
   }
+
   .ham-menu {
     display: block;
     font-size: 1.25rem;
