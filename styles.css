@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: #fff;
   position: sticky;
   width: 100vw;
   height: 4.5rem;
@@ -64,9 +64,11 @@ body {
 .mobile-menu {
   display: none;
 }
+
 #ham-menu-toggle {
   display: none;
 }
+
 header li {
   list-style: none;
 }
@@ -120,10 +122,12 @@ main p {
   color: #505f79;
   object-fit: contain;
 }
+
 @media screen and (max-width: 768px) {
   .header {
     padding: 0 2.5rem;
   }
+
   .nav-links {
     display: none;
   }
@@ -162,9 +166,9 @@ main p {
   }
 
   .mobile-menu-links a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -177,7 +181,7 @@ main p {
     right: 2.5rem;
     font-size: 3rem;
     cursor: pointer;
-    color: #ffffff;
+    color: #fff;
   }
 
   .mobile-menu-links {
