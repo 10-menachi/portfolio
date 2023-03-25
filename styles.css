@@ -167,12 +167,12 @@ body {
   }
 
   .work-section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
     justify-content: center;
     align-items: center;
+    grid-gap: 2rem;
     width: 100%;
-    gap: 2rem;
     margin-top: 7.125rem;
     padding: 1rem 2rem;
   }
@@ -240,6 +240,10 @@ body {
   }
 
   .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     margin-top: 7.125rem;
     background-color: #fff;
     border-top-right-radius: 100px;
@@ -271,12 +275,17 @@ body {
     font-size: 1rem;
   }
 
+  .main .connect {
+    margin-bottom: 1rem;
+  }
+
   .about-me .connect {
     margin-bottom: 0.75rem;
   }
 
   .my-skills {
     margin-top: 2rem;
+    width: 100%;
   }
 
   .modal-outside {
