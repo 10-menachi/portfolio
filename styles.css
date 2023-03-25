@@ -5,6 +5,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #e5e5e5;
+}
+
 .header {
   background-color: #fff;
   height: 5rem;
@@ -68,12 +72,13 @@
 
 .main {
   background-image: url("assets/bg-mobile.png");
+  background-color: #fff;
   background-repeat: no-repeat;
   background-size: contain;
   height: 718px;
   width: 100vw;
   padding: 5rem 10%;
-  border-bottom-left-radius: 30%;
+  border-bottom-left-radius: 100px;
 }
 
 .main h1 {
