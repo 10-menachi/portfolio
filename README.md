@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="th.webp" alt="logo" width="140"  height="auto" />
+  <img src="assets/th.webp" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Christian Wamalwa's Portfolio Website</b></h3>
