@@ -99,11 +99,6 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.main .connect {
-  color: #6070ff;
-  font-size: 1.5rem;
-}
-
 .social-media-icons ul {
   display: flex;
   flex-direction: row;
@@ -156,10 +151,9 @@ body {
     color: #172b4d;
   }
 
-  .card button {
+  .button {
     padding: 12px;
     gap: 10px;
-    width: 126px;
     height: 48px;
     border: 1px solid #6070ff;
     border-radius: 8px;
@@ -242,5 +236,98 @@ body {
     background-color: #ebebff;
     padding: 4px 12px;
     border-radius: 8px;
+  }
+
+  .about-section {
+    margin-top: 7.125rem;
+    background-color: #fff;
+    border-top-right-radius: 100px;
+    padding: 7rem 2rem;
+  }
+
+  .about-me h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .about-me p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: 344563;
+    margin-top: 0.75rem;
+  }
+
+  .about-me .connect,
+  .main .connect {
+    color: #6070ff;
+    font-size: 1rem;
+  }
+  .about-me .connect {
+    margin-bottom: 0.75rem;
+  }
+
+  .my-skills {
+    margin-top: 2rem;
+  }
+
+  .modal-outside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+    border-bottom: 1px solid #acb7c3;
+  }
+
+  .modal-outside h3 {
+    color: #000;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .modal-outside p {
+    color: #505f79;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .my-skills ul {
+    list-style-type: none;
+  }
+
+  .language-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 1rem;
+    gap: 2rem;
+    background-color: #f7f7f9;
+    margin: 1rem 0;
+    border-radius: 8px;
+  }
+
+  .language-card p {
+    color: #253858;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .my-skills li img {
+    object-fit: contain;
   }
 }
