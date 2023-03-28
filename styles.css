@@ -389,7 +389,6 @@ body {
   input[type="email"],
   .contact-form textarea {
     border-radius: 8px;
-    border: 1px solid #cfd8dc;
     padding: 1rem 1rem;
     width: 100%;
     border: none;
