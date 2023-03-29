@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 
 .header {
@@ -164,6 +164,12 @@ body {
     font-size: 17px;
     line-height: 24px;
     color: #6070ff;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #2230d2;
+    color: #fff;
   }
 
   .work-section {
@@ -175,6 +181,7 @@ body {
     width: 100%;
     margin-top: 7.125rem;
     padding: 1rem 2rem;
+    background-color: #e5e5e5;
   }
 
   .card {
@@ -247,7 +254,7 @@ body {
     margin-top: 7.125rem;
     background-color: #fff;
     border-top-right-radius: 100px;
-    padding: 7rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .about-me h1 {
@@ -346,7 +353,8 @@ body {
 
   .contact {
     background-image: url("assets/contact-bg-image.png");
-    background-size: cover;
+    background-position: right;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -356,6 +364,7 @@ body {
     background-color: #6070ff;
     border-top-left-radius: 100px;
     gap: 2rem;
+    overflow: hidden;
   }
 
   .contact h2 {
@@ -366,6 +375,7 @@ body {
     line-height: 3.25rem;
     color: #fff;
     margin-right: 1.25rem;
+    margin-top: 2rem;
   }
 
   .contact p {
@@ -375,6 +385,7 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
     color: #fff;
+    text-align: center;
   }
 
   .contact-form {
