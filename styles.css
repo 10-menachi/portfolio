@@ -71,7 +71,6 @@ body {
 }
 
 .main {
-  background-image: url("assets/bg-mobile.png");
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: contain;
@@ -115,12 +114,109 @@ body {
   object-fit: contain;
   margin-bottom: 1rem;
 }
+.contact {
+  background-image: url("assets/contact-bg-image-2.svg");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 5rem 1.25rem;
+  background-color: #6070ff;
+  border-top-left-radius: 100px;
+  gap: 2rem;
+  overflow: hidden;
+  margin-top: 17rem;
+}
+
+.contact h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: #fff;
+  margin-right: 1.25rem;
+  margin-top: 2rem;
+}
+
+.contact p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+.contact-form textarea {
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #b3bac5;
+}
+
+.button {
+  padding: 12px;
+  gap: 10px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2230d2;
+  color: #fff;
+}
 
 @media screen and (max-width: 768px) {
+  .main {
+    background-image: url("assets/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .nav-links ul {
     display: none;
   }
 
+  .contact {
+    background-image: url("assets/contact-bg-image.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   .ham-menu {
     display: block;
     font-size: 1.25rem;
@@ -149,27 +245,6 @@ body {
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
-  }
-
-  .button {
-    padding: 12px;
-    gap: 10px;
-    height: 48px;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    background-color: #fff;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    color: #6070ff;
-    cursor: pointer;
-  }
-
-  .button:hover {
-    background-color: #2230d2;
-    color: #fff;
   }
 
   .work-section {
@@ -349,69 +424,5 @@ body {
 
   .my-skills li img {
     object-fit: contain;
-  }
-
-  .contact {
-    background-image: url("assets/contact-bg-image.png");
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    padding: 5rem 1.25rem;
-    background-color: #6070ff;
-    border-top-left-radius: 100px;
-    gap: 2rem;
-    overflow: hidden;
-  }
-
-  .contact h2 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    color: #fff;
-    margin-right: 1.25rem;
-    margin-top: 2rem;
-  }
-
-  .contact p {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    color: #fff;
-    text-align: center;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1.5rem;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  .contact-form textarea {
-    border-radius: 8px;
-    padding: 1rem 1rem;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #172b4d;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.25rem;
-  }
-
-  input::placeholder,
-  textarea::placeholder {
-    color: #b3bac5;
   }
 }
