@@ -343,59 +343,64 @@ body {
   .my-skills li img {
     object-fit: contain;
   }
-}
 
-.contact {
-  background-image: url("assets/contact-bg-image.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  padding: 5rem 1.25rem;
-  background-color: #6070FF;
-  border-top-left-radius: 100px;
-  gap: 2rem;
-}
-.contact h2 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.5rem;
-  line-height: 3.25rem;
-  color: #fff;
-  margin-right: 1.25rem;
-}
-.contact p {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  color: #fff;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-input[type="text"],
-input[type="email"],
-.contact-form textarea {
-  border-radius: 8px;
-  padding: 1rem 1rem;
-  width: 100%;
-  border: none;
-  outline: none;
-  color: #172B4D;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.25rem;
-}
-input::placeholder,
-textarea::placeholder {
-  color: #B3BAC5;
+  .contact {
+    background-image: url("assets/contact-bg-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 5rem 1.25rem;
+    background-color: #6070ff;
+    border-top-left-radius: 100px;
+    gap: 2rem;
+  }
+
+  .contact h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    color: #fff;
+    margin-right: 1.25rem;
+  }
+
+  .contact p {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: #fff;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  .contact-form textarea {
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #172b4d;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #b3bac5;
+  }
 }
