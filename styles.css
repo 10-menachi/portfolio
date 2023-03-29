@@ -25,6 +25,9 @@ body {
   padding: 0 10%;
 }
 
+.ham-menu {
+  display: none;
+}
 .nav-links ul {
   display: flex;
   flex-direction: row;
