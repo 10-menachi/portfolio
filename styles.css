@@ -71,13 +71,23 @@ body {
 }
 
 .main {
+  background-image: url("assets/header-bg-desktop.png");
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: right;
   height: 718px;
   width: 100vw;
   padding: 5rem 10%;
   border-bottom-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-1 {
+  margin-top: 5rem;
 }
 
 .main h1 {
@@ -86,6 +96,10 @@ body {
   font-weight: 700;
   font-size: 2.5rem;
   color: #091e42;
+}
+
+.ham {
+  display: none;
 }
 
 .main p {
@@ -114,6 +128,165 @@ body {
   object-fit: contain;
   margin-bottom: 1rem;
 }
+
+.work-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5%;
+  background-color: #e5e5e5;
+}
+
+.work-section .card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.canopy {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.canopy img {
+  border-radius: 100%;
+}
+
+.canopy h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.canopy h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.card h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  max-width: 500px;
+}
+
+.card ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1.5rem 1rem 0;
+  gap: 1rem;
+}
+
+.card li {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #6070ff;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.snap {
+  width: 544px;
+  height: 448px;
+}
+
+.card .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10%;
+  background-color: #fff;
+  border-top-right-radius: 100px;
+}
+
+.about-me,
+.my-skills {
+  flex: 0.5;
+}
+
+.about-me h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  color: #172b4d;
+}
+
+.about-me p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: 344563;
+  margin-top: 0.75rem;
+  max-width: 700px;
+}
+
+.about-me .connect,
+.main .connect {
+  color: #6070ff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.modal-outside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+  border-bottom: 1px solid #acb7c3;
+}
+
 .contact {
   background-image: url("assets/contact-bg-image-2.svg");
   background-position: right;
@@ -129,6 +302,65 @@ body {
   gap: 2rem;
   overflow: hidden;
   margin-top: 17rem;
+}
+
+.my-skills {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.modal-outside h3 {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.modal-outside p {
+  color: #505f79;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.my-skills ul {
+  list-style-type: none;
+}
+
+.language-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1rem;
+  gap: 2rem;
+  background-color: #f7f7f9;
+  margin: 1rem 0;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.language-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.language-card p {
+  color: #253858;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.my-skills li img {
+  object-fit: contain;
 }
 
 .contact h2 {
@@ -211,6 +443,9 @@ textarea::placeholder {
     display: none;
   }
 
+  .language-cards {
+    flex-direction: column;
+  }
   .contact {
     background-image: url("assets/contact-bg-image.png");
     background-position: right;
@@ -222,29 +457,6 @@ textarea::placeholder {
     font-size: 1.25rem;
     cursor: pointer;
     color: #6070ff;
-  }
-
-  .canopy {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    width: 100%;
-    gap: 1rem;
-    margin: 1rem 0;
-  }
-
-  .canopy img {
-    border-radius: 100%;
-  }
-
-  .card h1 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #172b4d;
   }
 
   .work-section {
@@ -269,56 +481,12 @@ textarea::placeholder {
     padding: 1.5rem 1.5rem;
   }
 
+  .left img {
+    object-fit: contain;
+  }
+
   .left {
     margin-bottom: 1rem;
-  }
-
-  .canopy h4 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #344563;
-  }
-
-  .canopy h5 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #7a869a;
-  }
-
-  .card p {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #344563;
-  }
-
-  .card ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 1.5rem 1rem 0;
-  }
-
-  .card li {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    color: #6070ff;
-    background-color: #ebebff;
-    padding: 4px 12px;
-    border-radius: 8px;
   }
 
   .about-section {
@@ -328,33 +496,7 @@ textarea::placeholder {
     justify-content: center;
     margin-top: 7.125rem;
     background-color: #fff;
-    border-top-right-radius: 100px;
     padding: 1rem 2rem;
-  }
-
-  .about-me h1 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #172b4d;
-  }
-
-  .about-me p {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: 344563;
-    margin-top: 0.75rem;
-  }
-
-  .about-me .connect,
-  .main .connect {
-    color: #6070ff;
-    font-size: 1rem;
   }
 
   .main .connect {
@@ -365,64 +507,12 @@ textarea::placeholder {
     margin-bottom: 0.75rem;
   }
 
-  .my-skills {
-    margin-top: 2rem;
+  .left img {
     width: 100%;
+    height: 100%;
   }
 
-  .modal-outside {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1rem 0;
-    align-items: center;
-    border-bottom: 1px solid #acb7c3;
-  }
-
-  .modal-outside h3 {
-    color: #000;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .modal-outside p {
-    color: #505f79;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .my-skills ul {
-    list-style-type: none;
-  }
-
-  .language-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem 1rem;
-    gap: 2rem;
-    background-color: #f7f7f9;
-    margin: 1rem 0;
-    border-radius: 8px;
-  }
-
-  .language-card p {
-    color: #253858;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .my-skills li img {
-    object-fit: contain;
+  .work-section .card {
+    flex-direction: column;
   }
 }
