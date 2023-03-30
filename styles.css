@@ -431,6 +431,7 @@ textarea::placeholder {
   line-height: 24px;
   color: #6070ff;
   cursor: pointer;
+  transition: background-color 1s, color 1s;
 }
 
 .button:hover {
