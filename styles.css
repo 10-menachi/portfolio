@@ -493,6 +493,11 @@ textarea::placeholder {
     object-fit: contain;
     width: 100%;
     height: 100%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .left img:hover {
+    transform: scale(1.05);
   }
 
   .left {
