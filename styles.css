@@ -207,12 +207,7 @@ body {
 
 .card ul {
   list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem 1.5rem 1rem 0;
-  gap: 1rem;
+  position: relative;
 }
 
 .card li {
@@ -225,6 +220,8 @@ body {
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
+  float: left;
+  margin-right: 1rem;
 }
 
 .snap {
