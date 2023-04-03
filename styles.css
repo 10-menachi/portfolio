@@ -153,6 +153,9 @@ body {
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .canopy {
@@ -514,6 +517,8 @@ label {
 
   .left {
     margin-bottom: 1rem;
+    width: 100%;
+    flex: 0.5;
   }
 
   .about-section {
