@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -277,7 +278,7 @@ body {
 
 .about-me .connect,
 .main .connect {
-  color: #6070ff;
+  color: #80a0ff;
   font-size: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -436,6 +437,17 @@ textarea::placeholder {
 .button:hover {
   background-color: #2230d2;
   color: #fff;
+}
+
+label {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #505f79;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
