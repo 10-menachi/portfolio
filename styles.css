@@ -439,6 +439,17 @@ textarea::placeholder {
   color: #fff;
 }
 
+label {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #505f79;
+  margin-bottom: 1rem;
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .main {
     background-image: url("assets/bg-mobile.png");
