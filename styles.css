@@ -455,6 +455,30 @@ label {
 }
 
 @media screen and (max-width: 768px) {
+  
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    list-style-type: none;
+    width: 100%;
+  }
+
+  .mobile-menu ul li {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+
+  .mobile-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .main {
     background-image: url('assets/bg-mobile.png');
     background-repeat: no-repeat;
