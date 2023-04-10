@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 0.9375rem;
@@ -63,7 +63,7 @@ body {
 }
 
 .logo-text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.25rem;
@@ -78,7 +78,7 @@ body {
 }
 
 .main {
-  background-image: url("assets/header-bg-desktop.png");
+  background-image: url('assets/header-bg-desktop.png');
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,7 +98,7 @@ body {
 }
 
 .main h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -110,7 +110,7 @@ body {
 }
 
 .main p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -174,7 +174,7 @@ body {
 }
 
 .canopy h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -183,7 +183,7 @@ body {
 }
 
 .canopy h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -192,7 +192,7 @@ body {
 }
 
 .card h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -201,7 +201,7 @@ body {
 }
 
 .card p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -221,7 +221,7 @@ body {
 }
 
 .card li {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -261,7 +261,7 @@ body {
 }
 
 .about-me h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -270,7 +270,7 @@ body {
 }
 
 .about-me p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -298,7 +298,7 @@ body {
 }
 
 .contact {
-  background-image: url("assets/contact-bg-image-2.svg");
+  background-image: url('assets/contact-bg-image-2.svg');
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -321,7 +321,7 @@ body {
 
 .modal-outside h3 {
   color: #000;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -330,7 +330,7 @@ body {
 
 .modal-outside p {
   color: #505f79;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -362,7 +362,7 @@ body {
 
 .language-card p {
   color: #253858;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -374,7 +374,7 @@ body {
 }
 
 .contact h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -385,7 +385,7 @@ body {
 }
 
 .contact p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
@@ -403,8 +403,8 @@ body {
   gap: 1.5rem;
 }
 
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 .contact-form textarea {
   border-radius: 8px;
   padding: 1rem 1rem;
@@ -412,7 +412,7 @@ input[type="email"],
   border: none;
   outline: none;
   color: #172b4d;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   line-height: 1.25rem;
 }
@@ -429,7 +429,7 @@ textarea::placeholder {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -444,7 +444,7 @@ textarea::placeholder {
 }
 
 label {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -456,7 +456,7 @@ label {
 
 @media screen and (max-width: 768px) {
   .main {
-    background-image: url("assets/bg-mobile.png");
+    background-image: url('assets/bg-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -482,35 +482,12 @@ label {
     background-color: #6070ff;
   }
 
-  .mobile-menu ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 2rem;
-    list-style-type: none;
-    width: 100%;
-  }
-
-  .mobile-menu ul li {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.25rem;
-  }
-
-  .mobile-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-
   .language-cards {
     flex-direction: column;
   }
 
   .contact {
-    background-image: url("assets/contact-bg-image.png");
+    background-image: url('assets/contact-bg-image.png');
     background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
