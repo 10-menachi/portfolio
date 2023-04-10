@@ -14,28 +14,48 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/e53bf7a0b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Christian Timbe's Developer Portfolio</title>
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <a href="#portfolio" class="logo-text">Chris</a>
+        <a href="#" class="logo-text">Chris</a>
       </div>
 
       <div class="nav-links">
         <ul>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#main">Main</a></li>
+          <li><a href="#work-section">Portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
       <nav class="ham-menu">
-        <p class="menu-icon">&#9776;</p>
+        <i class="fa-solid fa-bars"></i>
       </nav>
+
+      <div class="mobile-menu">
+        <div class="close-icon">
+          <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="mobile-links">
+          <ul>
+            <li class="mobile-link"><a href="#main">Main</a></li>
+            <li class="mobile-link"><a href="#work-section">Portfolio</a></li>
+            <li class="mobile-link"><a href="#about">About</a></li>
+            <li class="mobile-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
 
-    <section class="main">
+    <section class="main" id="main">
       <h1>
         I&#39;m Chris. <br />
         Glad to see you!
@@ -54,42 +74,46 @@
         <ul>
           <li>
             <a href="https://twitter.com/christian_timbe"
-              ><img src="assets/twitter.png" alt=""
+              ><img src="assets/twitter.png" alt="Twitter Icon"
             /></a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/chris-droid/"
-              ><img src="assets/linked-in.png" alt=""
+              ><img src="assets/linked-in.png" alt="Linked-In Icon"
             /></a>
           </li>
           <li>
-            <a href=""><img src="assets/em.png" alt="" /></a>
+            <a href=""><img src="assets/em.png" alt="Medium Icon" /></a>
           </li>
           <li>
             <a href="https://github.com/10-menachi"
-              ><img src="assets/github.png" alt=""
+              ><img src="assets/github.png" alt="Github Icon"
             /></a>
           </li>
           <li>
-            <a href=""><img src="assets/chill.png" alt="" /></a>
+            <a href=""><img src="assets/chill.png" alt="Angellist Icon" /></a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="work-section">
+    <section class="work-section" id="work-section">
       <!-- first card -->
       <div class="card card-1">
         <div class="left">
-          <img src="assets/snapshot-1.png" alt="" class="snap" />
+          <img
+            src="assets/snapshot-1.png"
+            alt="Project Snapshot"
+            class="snap"
+          />
         </div>
         <div class="right">
           <h1>Tonic</h1>
           <div class="canopy">
             <h4>Canopy</h4>
-            <img src="assets/circle.png" alt="" />
+            <img src="assets/circle.png" alt="Circle" />
             <h5>Back End Dev</h5>
-            <img src="assets/circle.png" alt="" />
+            <img src="assets/circle.png" alt="Circle" />
             <h5>2015</h5>
           </div>
           <p>
@@ -109,15 +133,19 @@
 
       <div class="card card-1">
         <div class="left">
-          <img src="assets/snapshot-2.png" alt="" class="snap" />
+          <img
+            src="assets/snapshot-2.png"
+            alt="Project Snapshot"
+            class="snap"
+          />
         </div>
         <div class="right">
           <h1>Multi-Post Stories</h1>
           <div class="canopy">
             <h4>Canopy</h4>
-            <img src="assets/circle.png" alt="" />
+            <img src="assets/circle.png" alt="Circle" />
             <h4>Back End Dev</h4>
-            <img src="assets/circle.png" alt="" />
+            <img src="assets/circle.png" alt="Circle" />
             <h4>2015</h4>
           </div>
           <p>
@@ -138,15 +166,19 @@
 
       <div class="card card-1">
         <div class="left">
-          <img src="assets/snapshot-3.png" alt="" class="snap" />
+          <img
+            src="assets/snapshot-3.png"
+            alt="Project Snapshot"
+            class="snap"
+          />
         </div>
         <div class="right">
           <h1>Tonic</h1>
           <div class="canopy">
             <h4>Canopy</h4>
-            <img src="assets/circle.png" alt="" />
+            <img src="assets/circle.png" alt="Circle" />
             <h4>Back End Dev</h4>
-            <img src="assets/circle.png" alt="" />
+            <img src="assets/circle.png" alt="Circle" />
             <h4>2015</h4>
           </div>
           <p>
@@ -166,15 +198,19 @@
 
       <div class="card card-1">
         <div class="left">
-          <img src="assets/snapshot-4.png" alt="" class="snap" />
+          <img
+            src="assets/snapshot-4.png"
+            alt="Project Snapshot"
+            class="snap"
+          />
         </div>
         <div class="right">
           <h1>Multi-Post Stories</h1>
           <div class="canopy">
             <h4>Canopy</h4>
-            <img src="assets/circle.png" alt="" />
+            <img src="assets/circle.png" alt="Circle" />
             <h4>Back End Dev</h4>
-            <img src="assets/circle.png" alt="" />
+            <img src="assets/circle.png" alt="Circle" />
             <h4>2015</h4>
           </div>
           <p>
@@ -187,6 +223,7 @@
             <li>JavaScript</li>
           </ul>
           <button class="button" type="button">See Project</button>
+          <div id="about"></div>
         </div>
       </div>
     </section>
@@ -206,24 +243,24 @@
           <ul>
             <li>
               <a href="https://twitter.com/christian_timbe"
-                ><img src="assets/twitter.png" alt=""
+                ><img src="assets/twitter.png" alt="Twitter Icon"
               /></a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/chris-droid/"
-                ><img src="assets/linked-in.png" alt=""
+                ><img src="assets/linked-in.png" alt="Linked-In Icon"
               /></a>
             </li>
             <li>
-              <a href=""><img src="assets/em.png" alt="" /></a>
+              <a href=""><img src="assets/em.png" alt="Medium Icon" /></a>
             </li>
             <li>
               <a href="https://github.com/10-menachi"
-                ><img src="assets/github.png" alt=""
+                ><img src="assets/github.png" alt="Github Icon"
               /></a>
             </li>
             <li>
-              <a href=""><img src="assets/chill.png" alt="" /></a>
+              <a href=""><img src="assets/chill.png" alt="Angellist Icon" /></a>
             </li>
           </ul>
         </div>
@@ -235,20 +272,20 @@
           <div class="languages">
             <div class="modal-outside">
               <h3>Languages</h3>
-              <img src="assets/arrow-down.png" alt="" />
+              <img src="assets/arrow-down.png" alt="Dropdown Icon" />
             </div>
             <div class="line"></div>
             <ul class="language-cards">
               <li class="language-card">
-                <img src="assets/js.png" alt="" />
+                <img src="assets/js.png" alt="JavaScript Icon" />
                 <p>Javascript</p>
               </li>
               <li class="language-card">
-                <img src="assets/html.png" alt="" />
+                <img src="assets/html.png" alt="HTML Icon" />
                 <p>HTML</p>
               </li>
               <li class="language-card">
-                <img src="assets/css.png" alt="" />
+                <img src="assets/css.png" alt="CSS Icon" />
                 <p>CSS</p>
               </li>
             </ul>
@@ -256,18 +293,18 @@
         </div>
         <div class="modal-outside">
           <h3>Frameworks</h3>
-          <img src="assets/greater-than.png" alt="" />
+          <img src="assets/greater-than.png" alt="Dropdown Icon" />
         </div>
         <div class="line"></div>
         <div class="modal-outside">
           <h3>Skills</h3>
-          <img src="assets/greater-than.png" alt="" />
+          <img src="assets/greater-than.png" alt="Dropdown Icon" />
         </div>
         <div class="line"></div>
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Contact me</h2>
       <p>
         If you have an application you are interested in developing, a feature
@@ -280,31 +317,46 @@
         method="post"
         class="contact-form"
       >
-        <input
-          type="text"
-          class="name"
-          placeholder="name..."
-          class="placeholder"
-          required
-        />
-        <input
-          type="email"
-          class="email"
-          placeholder="email..."
-          class="placeholder"
-          required
-        />
-        <textarea
-          class="placeholder"
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Write your message here..."
-          required
-        ></textarea>
+        <label for="name">
+          Name
+          <input
+            name="name"
+            id="name"
+            type="text"
+            class="name"
+            placeholder="name..."
+            class="placeholder"
+            required
+          />
+        </label>
+        <label for="email">
+          Email
+          <input
+            name="email"
+            id="email"
+            type="email"
+            class="email"
+            placeholder="email..."
+            class="placeholder"
+            required
+          />
+        </label>
+        <label for="message">
+          Message
+          <textarea
+            class="placeholder"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+        </label>
         <button type="submit" class="button">Get in touch</button>
       </form>
     </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
