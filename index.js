@@ -2,12 +2,13 @@ const hamMenu = document.querySelector('.ham-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeMenu = document.querySelector('.close-icon');
 const mobileLinks = document.querySelectorAll('.mobile-link');
+const buttons = document.querySelectorAll('.see-project');
 
 const popup_details = [
   {
     name: 'Tonic',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: 'assets/snapshot-1.png',
     technologies: ['html', 'css', 'javascript'],
     linkToLive: '',
@@ -16,7 +17,7 @@ const popup_details = [
   {
     name: 'Multi-Post Stories',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: 'assets/snapshot-2.png',
     technologies: ['html', 'css', 'javascript'],
     linkToLive: '',
@@ -32,7 +33,7 @@ const popup_details = [
     linkToSource: '',
   },
   {
-    name: 'Tonic',
+    name: 'Multi-Post Stories',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     image: 'assets/snapshot-4.png',
@@ -53,5 +54,11 @@ closeMenu.addEventListener('click', () => {
 mobileLinks.forEach((link) => {
   link.addEventListener('click', () => {
     mobileMenu.classList.toggle('active');
+  });
+});
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', (e) => {
+    console.log(popup_details[index].name);
   });
 });
