@@ -21,7 +21,9 @@ mobileLinks.forEach((link) => {
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
-    email.setCustomValidity('Email must be in lowercase');
+    if (email.validity) {
+      email.setCustomValidity('Email must be in lowercase');
+    }
     e.preventDefault();
   }
 });
