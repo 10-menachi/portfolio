@@ -4,6 +4,7 @@ const closeMenu = document.querySelector('.close-icon');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 const form = document.querySelector('.contact-form');
 const email = document.querySelector('.email');
+const errorContainer = document.querySelector('.error-container');
 
 hamMenu.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
@@ -21,15 +22,17 @@ mobileLinks.forEach((link) => {
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
     if (email.validity) {
       email.setCustomValidity('Email must be in lowercase');
+      errorContainer.textContent = 'Email must be in lowercase';
     }
-    e.preventDefault();
   }
 });
 
 email.addEventListener('input', () => {
   if (email.validity) {
     email.setCustomValidity('');
+    errorContainer.textContent = '';
   }
 });
