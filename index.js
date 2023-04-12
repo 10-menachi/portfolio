@@ -70,6 +70,7 @@ buttons.forEach((button, index) => {
     popupTitle.textContent = popupDetails[index].name;
     popupImage.src = popupDetails[index].image;
     popupDescription.textContent = popupDetails[index].description;
+    popupTechnologies.innerHTML = '';
     popupDetails[index].technologies.forEach((tech) => {
       const listItem = document.createElement('li');
       listItem.textContent = tech;
