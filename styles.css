@@ -455,6 +455,136 @@ label {
   display: block;
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.popup-inside {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 90%;
+}
+
+.modal-close,
+.modal-close i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.top-part {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.popup-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.popup-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+
+.popup-desc p {
+  width: 778px;
+  height: 271px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+}
+
+.tech-stack ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-stack ul li {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #6070ff;
+  background-color: #ebebff;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #dfe1e6;
+  margin: 2rem 0;
+}
+
+.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.see-project-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.see-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .mobile-menu ul {
     display: flex;

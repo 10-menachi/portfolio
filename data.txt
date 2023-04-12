@@ -1,16 +1,3 @@
-const hamMenu = document.querySelector('.ham-menu');
-const mobileMenu = document.querySelector('.mobile-menu');
-const closeMenu = document.querySelector('.close-icon');
-const mobileLinks = document.querySelectorAll('.mobile-link');
-const buttons = document.querySelectorAll('.see-project');
-const modalClose = document.querySelector('.modal-close');
-const popup = document.querySelector('.popup');
-const popupTitle = document.querySelector('.popup-title');
-const popupImage = document.querySelector('.popup-image-img');
-const popupDescription = document.querySelector('.popup-description');
-const popupTechnologies = document.querySelector('.techs');
-const popupLive = document.querySelector('.popup-live');
-const popupSource = document.querySelector('.popup-source');
 const popupDetails = [
   {
     name: 'Tonic',
@@ -49,37 +36,3 @@ const popupDetails = [
     linkToSource: '',
   },
 ];
-
-hamMenu.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
-});
-
-closeMenu.addEventListener('click', () => {
-  mobileMenu.classList.toggle('active');
-});
-
-mobileLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
-  });
-});
-
-buttons.forEach((button, index) => {
-  button.addEventListener('click', () => {
-    popup.classList.add('open');
-    popupTitle.textContent = popupDetails[index].name;
-    popupImage.src = popupDetails[index].image;
-    popupDescription.textContent = popupDetails[index].description;
-    popupDetails[index].technologies.forEach((tech) => {
-      const listItem = document.createElement('li');
-      listItem.textContent = tech;
-      popupTechnologies.appendChild(listItem);
-    });
-    popupLive.href = popupDetails[index].linkToLive;
-    popupSource.href = popupDetails[index].linkToSource;
-  });
-});
-
-modalClose.addEventListener('click', () => {
-  popup.classList.remove('open');
-});
