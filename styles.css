@@ -525,6 +525,22 @@ label {
   align-items: center;
 }
 
+.next-and-prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.next-and-prev button {
+  border: none;
+}
+img {
+  object-fit: contain;
+}
+
 @media screen and (max-width: 768px) {
   .mobile-menu ul {
     display: flex;
