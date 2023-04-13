@@ -23,22 +23,17 @@ mobileLinks.forEach((link) => {
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
     e.preventDefault();
-    if (!email.validity) {
-      email.setCustomValidity('Email must be in lowercase');
-      form.appendChild(errorContainer);
-      errorContainer.textContent = 'Email must be in lowercase';
-      errorContainer.style.color = '#fff';
-      errorContainer.style.fontSize = '0.8rem';
-      errorContainer.style.padding = '1rem';
-      errorContainer.style.backgroundColor = 'red';
-      errorContainer.style.borderRadius = '0.5rem';
-    }
+    email.setCustomValidity('Email must be in lowercase');
+    form.appendChild(errorContainer);
+    errorContainer.textContent = 'Email must be in lowercase';
+    errorContainer.style.color = '#fff';
+    errorContainer.style.fontSize = '0.8rem';
+    errorContainer.style.padding = '1rem';
+    errorContainer.style.backgroundColor = 'red';
+    errorContainer.style.borderRadius = '0.5rem';
   }
 });
 
 email.addEventListener('input', () => {
-  if (email.validity) {
-    email.setCustomValidity('');
-    form.removeChild(errorContainer);
-  }
+  email.setCustomValidity('');
 });
