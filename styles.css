@@ -455,6 +455,13 @@ label {
   display: block;
 }
 
+.error-container {
+  background-color: red;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 768px) {
   .mobile-menu ul {
     display: flex;
