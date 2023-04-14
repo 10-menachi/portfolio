@@ -211,8 +211,7 @@ body {
   max-width: 500px;
 }
 
-.card ul,
-.popup ul {
+.card ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -233,6 +232,16 @@ body {
   background-color: #ebebff;
   padding: 4px 12px;
   border-radius: 8px;
+}
+
+.popup ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 1.5rem 1rem 0;
+  gap: 0.4rem;
 }
 
 .snap {
@@ -499,7 +508,6 @@ label {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 3rem;
 }
 
 .popup-buttons {
