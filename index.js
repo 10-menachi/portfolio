@@ -73,6 +73,11 @@ const createWork = (work, index) => {
   return workDiv;
 };
 
+const form = document.querySelector('.contact-form');
+const email = document.querySelector('.email');
+const errorContainer = document.createElement('div');
+
+
 hamMenu.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
 });
@@ -86,6 +91,7 @@ mobileLinks.forEach((link) => {
     mobileMenu.classList.toggle('active');
   });
 });
+
 
 works.forEach((work, index) => {
   workSection.appendChild(createWork(work, index));
@@ -177,4 +183,22 @@ buttons.forEach((button) => {
     const popup = popupCard(work);
     document.body.appendChild(popup);
   });
+
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    email.setCustomValidity('Email must be in lowercase');
+    form.appendChild(errorContainer);
+    errorContainer.textContent = 'Email must be in lowercase';
+    errorContainer.style.color = '#fff';
+    errorContainer.style.fontSize = '0.8rem';
+    errorContainer.style.padding = '1rem';
+    errorContainer.style.backgroundColor = 'red';
+    errorContainer.style.borderRadius = '0.5rem';
+  }
+});
+
+email.addEventListener('input', () => {
+  email.setCustomValidity('');
+
 });
