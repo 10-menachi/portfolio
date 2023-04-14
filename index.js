@@ -77,7 +77,6 @@ const form = document.querySelector('.contact-form');
 const email = document.querySelector('.email');
 const errorContainer = document.createElement('div');
 
-
 hamMenu.addEventListener('click', () => {
   mobileMenu.classList.toggle('active');
 });
@@ -91,7 +90,6 @@ mobileLinks.forEach((link) => {
     mobileMenu.classList.toggle('active');
   });
 });
-
 
 works.forEach((work, index) => {
   workSection.appendChild(createWork(work, index));
@@ -183,6 +181,7 @@ buttons.forEach((button) => {
     const popup = popupCard(work);
     document.body.appendChild(popup);
   });
+});
 
 form.addEventListener('submit', (e) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -200,5 +199,4 @@ form.addEventListener('submit', (e) => {
 
 email.addEventListener('input', () => {
   email.setCustomValidity('');
-
 });
