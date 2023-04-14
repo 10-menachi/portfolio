@@ -145,6 +145,29 @@ You can deploy this project using:
 - [@christian_timbe](https://twitter.com/christian_timbe)
 - [chris-droid](https://linkedin.com/in/chris-droid)
 
+👤 **Junaid Ahmed**
+
+- [@iamsjunaid](https://github.com/iamsjunaid)
+- [@JunaidAhmedSd](https://twitter.com/junaidahmedsd)
+- [junaid-syed-058b2779](https://www.linkedin.com/in/junaid-syed-058b2779/)
+
+👤 **Mohamed Almeari**
+
+- [@mohametalmeari](https://github.com/mohametalmeari)
+- [@MohametAlmeari](https://twitter.com/MohametAlmeari)
+- [mohamet-almeari](https://www.linkedin.com/in/mohamet-almeari/)
+
+👤 **Esmatullah Qadeemi**
+
+- [@Esmatullah12](https://github.com/Esmatullah12)
+- [@Esmatullah173](https://twitter.com/Esmatullah173)
+- [esmatullah-qadeemi-b9951821b](https://www.linkedin.com/in/esmatullah-qadeemi-b9951821b/)
+
+👤 **Maurice Coker**
+
+- [@coker2019](https://github.com/coker2019)
+- [@Olabisi](https://twitter.com/olabisi)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
