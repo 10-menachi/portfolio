@@ -10,6 +10,10 @@ body {
   background-color: #fff;
 }
 
+img {
+  object-fit: contain;
+}
+
 .header {
   background-color: #fff;
   height: 5rem;
@@ -544,9 +548,6 @@ label {
 
 .next-and-prev button {
   border: none;
-}
-img {
-  object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {

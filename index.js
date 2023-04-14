@@ -3,7 +3,6 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const closeMenu = document.querySelector('.close-icon');
 const mobileLinks = document.querySelectorAll('.mobile-link');
 const workSection = document.querySelector('.work-section');
-const body = document.querySelector('body');
 const works = [
   {
     title: 'Tonic',
@@ -135,6 +134,29 @@ const popupCard = (work) => {
     </div>
   `;
 
+  const showNextWork = (currentWork) => {
+    if (currentWork === works[works.length - 1]) {
+      return;
+    } else {
+      const currentIndex = works.indexOf(currentWork);
+      const nextIndex = (currentIndex + 1) % works.length;
+      const nextWork = works[nextIndex];
+      const popup = document.querySelector('.popup');
+      popup.replaceWith(popupCard(nextWork));
+    }
+  };
+
+  const showPrevWork = (currentWork) => {
+    if (currentWork === works[0]) {
+      return;
+    } else {
+      const currentIndex = works.indexOf(currentWork);
+      const prevIndex = (currentIndex - 1 + works.length) % works.length;
+      const prevWork = works[prevIndex];
+      const popup = document.querySelector('.popup');
+      popup.replaceWith(popupCard(prevWork));
+    }
+  };
   // Attach event listeners to next and previous buttons
   const nextButton = popup.querySelector('.next-button');
   nextButton.addEventListener('click', () => showNextWork(work));
@@ -147,29 +169,6 @@ const popupCard = (work) => {
   closeButton.addEventListener('click', () => popup.remove());
 
   return popup;
-};
-
-const showNextWork = (currentWork) => {
-  if (currentWork === works[works.length - 1]) {
-    return;
-  } else {
-    const currentIndex = works.indexOf(currentWork);
-    const nextIndex = (currentIndex + 1) % works.length;
-    const nextWork = works[nextIndex];
-    const popup = document.querySelector('.popup');
-    popup.replaceWith(popupCard(nextWork));
-  }
-};
-const showPrevWork = (currentWork) => {
-  if (currentWork === works[0]) {
-    return;
-  } else {
-    const currentIndex = works.indexOf(currentWork);
-    const prevIndex = (currentIndex - 1 + works.length) % works.length;
-    const prevWork = works[prevIndex];
-    const popup = document.querySelector('.popup');
-    popup.replaceWith(popupCard(prevWork));
-  }
 };
 const buttons = document.querySelectorAll('.work-button');
 buttons.forEach((button) => {
