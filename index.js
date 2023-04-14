@@ -139,25 +139,19 @@ const popupCard = (work) => {
   `;
 
   const showNextWork = (currentWork) => {
-    if (currentWork === works[works.length - 1]) {
-      return;
-    } else {
+    if (currentWork !== works[works.length - 1]) {
       const currentIndex = works.indexOf(currentWork);
       const nextIndex = (currentIndex + 1) % works.length;
       const nextWork = works[nextIndex];
-      const popup = document.querySelector('.popup');
       popup.replaceWith(popupCard(nextWork));
     }
   };
 
   const showPrevWork = (currentWork) => {
-    if (currentWork === works[0]) {
-      return;
-    } else {
+    if (currentWork !== works[0]) {
       const currentIndex = works.indexOf(currentWork);
       const prevIndex = (currentIndex - 1 + works.length) % works.length;
       const prevWork = works[prevIndex];
-      const popup = document.querySelector('.popup');
       popup.replaceWith(popupCard(prevWork));
     }
   };
