@@ -195,7 +195,6 @@ email.addEventListener('input', () => {
   email.setCustomValidity('');
 });
 
-// save data to local storage
 const name = document.querySelector('.name');
 const message = document.querySelector('textarea');
 
@@ -216,5 +215,9 @@ const saveDataToStorage = () => {
   };
   localStorage.setItem('data', JSON.stringify(data));
 };
+
+name.addEventListener('input', saveDataToStorage);
+email.addEventListener('input', saveDataToStorage);
+message.addEventListener('input', saveDataToStorage);
+
 window.addEventListener('load', getDataFromStorage);
-form.addEventListener('submit', saveDataToStorage);
