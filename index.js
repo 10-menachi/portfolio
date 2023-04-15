@@ -194,3 +194,30 @@ form.addEventListener('submit', (e) => {
 email.addEventListener('input', () => {
   email.setCustomValidity('');
 });
+
+const name = document.querySelector('.name');
+const message = document.querySelector('textarea');
+
+const getDataFromStorage = () => {
+  const storageData = JSON.parse(localStorage.getItem('data'));
+  if (storageData) {
+    name.value = storageData.name;
+    email.value = storageData.email;
+    message.value = storageData.message;
+  }
+};
+
+const saveDataToStorage = () => {
+  const data = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+};
+
+name.addEventListener('input', saveDataToStorage);
+email.addEventListener('input', saveDataToStorage);
+message.addEventListener('input', saveDataToStorage);
+
+window.addEventListener('load', getDataFromStorage);
