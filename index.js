@@ -207,3 +207,14 @@ const getDataFromStorage = () => {
     message.value = storageData.message;
   }
 };
+
+const saveDataToStorage = () => {
+  const data = {
+    name: name.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+};
+window.addEventListener('load', getDataFromStorage);
+form.addEventListener('submit', saveDataToStorage);
