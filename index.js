@@ -5,40 +5,22 @@ const mobileLinks = document.querySelectorAll('.mobile-link');
 const workSection = document.querySelector('.work-section');
 const works = [
   {
-    title: 'Tonic',
+    title: 'To-Do List',
     image: 'assets/snapshot-1.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['html', 'css', 'javascript'],
-    live: '',
-    source: '',
+      'A simple to-do list app that allows you to add, edit and delete tasks. It also allows you to mark tasks as complete.',
+    tags: ['HTML', 'CSS', 'JAVASCRIPT', 'WEBPACK', 'JEST'],
+    live: 'https://10-menachi.github.io/todo-list/dist/',
+    source: 'https://github.com/10-menachi/todo-list',
   },
   {
-    title: 'Multi-Post Stories',
+    title: 'Bartending Competition Website',
     image: 'assets/snapshot-2.png',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['html', 'css', 'javascript'],
-    live: '',
-    source: '',
-  },
-  {
-    title: 'Tonic',
-    image: 'assets/snapshot-3.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['html', 'css', 'javascript'],
-    live: '',
-    source: '',
-  },
-  {
-    title: 'Multi-Post Stories',
-    image: 'assets/snapshot-4.png',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tags: ['html', 'css', 'javascript'],
-    live: '',
-    source: '',
+      'A website for a bartending competition. It is a simple UI for a competition that allows bartenders to register and submit their recipes.',
+    tags: ['HTML', 'CSS', 'JAVASCRIPT'],
+    live: 'https://10-menachi.github.io/capstone',
+    source: 'https://github.com/10-menachi/capstone',
   },
 ];
 
@@ -67,7 +49,7 @@ const createWork = (work, index) => {
           <ul>
             ${work.tags.map((tag) => `<li>${tag}</li>`).join('')}
           </ul>
-          <button type="button" class="work-button button" id="${index}">See Project</button>
+          <button class="work-button button" id="${index}">See Project</button>
         </div>
   `;
   return workDiv;
@@ -126,8 +108,8 @@ const popupCard = (work) => {
           </ul>
           <div class="line"></div>
           <div class="popup-buttons">
-            <button type="button" class="popup-button button">See Live <img src="assets/Icon.png" alt="External Link" /></button>
-            <button type="button" class="popup-button button">See Source <img src="assets/github.png" alt="Github" /></button>
+            <a href="${work.live}" class="popup-button button">See Live <img src="assets/Icon.png" alt="External Link" /></a>
+            <a href="${work.source}" class="popup-button button">See Source <img src="assets/github.png" alt="Github" /></a>
           </div>
           <div class="next-and-prev">
             <button type="button" class="prev-button button"><i class="fas fa-chevron-left"></i> Previous</button>
